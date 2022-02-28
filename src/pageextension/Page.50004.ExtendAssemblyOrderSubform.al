@@ -19,7 +19,7 @@ pageextension 50004 ExtendAssemblyOrderSubform extends "Assembly Order Subform"
     trigger OnAfterGetRecord()
     var
     begin
-        UpdateUnitCostValue;
+        //  UpdateUnitCostValue;
     end;
 
 
@@ -39,8 +39,8 @@ pageextension 50004 ExtendAssemblyOrderSubform extends "Assembly Order Subform"
             until recAssemblyLine.Next() = 0;
 
         if recAsseemblyHeader.Get(Rec."Document Type", Rec."Document No.") then begin
-            recAsseemblyHeader.Validate("Unit Cost", TotalUnitCost);
-            recAsseemblyHeader.Modify();
+            recAsseemblyHeader."Unit Cost" := TotalUnitCost;
+            recAsseemblyHeader.Modify(false);
         end;
 
     end;

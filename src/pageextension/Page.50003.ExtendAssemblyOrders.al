@@ -2,14 +2,7 @@ pageextension 50003 ExtendAssemblyOrders extends "Assembly Orders"
 {
     layout
     {
-        modify("Unit Cost")
-        {
-            ApplicationArea = All;
-            trigger OnAfterValidate()
-            begin
-                CurrPage.Update(false);
-            end;
-        }
+
 
     }
 
@@ -24,7 +17,7 @@ pageextension 50003 ExtendAssemblyOrders extends "Assembly Orders"
     trigger OnAfterGetRecord()
     var
     begin
-        Rec.UpdateUnitCostValue(Rec."Document Type", Rec."No.")
+        //Rec.UpdateUnitCostValue(Rec."Document Type", Rec."No.")
     end;
 
 
