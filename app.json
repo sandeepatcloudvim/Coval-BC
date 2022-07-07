@@ -2,7 +2,7 @@
   "id": "e9c55fd6-4013-4947-b206-0c614d25c731",
   "name": "Coval BC18",
   "publisher": "CBR Technology",
-  "version": "18.0.0.12",
+  "version": "20.0.0.1",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -22,5 +22,5 @@
   ],
   "contextSensitiveHelpUrl": "https://CovalBC18.com/help/",
   "showMyCode": false,
-  "runtime": "7.0"
+  "runtime": "8.0"
 }
